@@ -8,6 +8,12 @@ function Exercise4() {
       <p>first: {first}</p>
       <p>third: {third}</p>
       <p>restAges: [{restAges.join(', ')}]</p>
+      
+      <ul>
+        {ages.map((age, idx) => (
+          <li key={idx}>Phần tử thứ {idx}: {age}</li>
+        ))}
+      </ul>
     </div>
   );
 }
